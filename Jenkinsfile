@@ -23,4 +23,8 @@ pipeline{
             }
         }
     }
+
+    tools{
+        nodejs 'NodeJS 4.8.6'
+    }
 }
