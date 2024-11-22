@@ -1,8 +1,5 @@
 pipeline{
     agent any
-    tools{
-
-    }
     //look at package.json for npm scripts
     stages{
         stage('build'){//npm install
