@@ -11,15 +11,15 @@ pipeline{
 
         stage('test'){
             steps{
+                sh 'npm install'
                 sh 'npm run test'
-
             }
         }
 
         stage('package'){ //include archiving artifact
             steps{
+                sh'npm install'
                 sh 'npm run package'
-                sh 'npm run postpackage'
             }
         }
     }
